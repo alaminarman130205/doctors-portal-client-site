@@ -1,10 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import chair from "../../../assets/images/chair.png";
 import { DayPicker } from "react-day-picker";
-import { format } from "date-fns";
 
-const AppointmentBanner = () => {
-  const [selectedDate, setSelectedDate] = useState(new Date());
+const AppointmentBanner = ({ selectedDate, setSelectedDate }) => {
   return (
     <div className="hero">
       <div className="hero-content flex-col lg:flex-row-reverse">
@@ -19,7 +17,6 @@ const AppointmentBanner = () => {
             selected={selectedDate}
             onSelect={setSelectedDate}
           ></DayPicker>
-          <p>you have selected date: {format(selectedDate, "PPP")}</p>
         </div>
       </div>
     </div>
