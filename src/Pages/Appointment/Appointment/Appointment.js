@@ -7,7 +7,6 @@ const Appointment = () => {
 
   return (
     <div>
-      <h1>this is appointment</h1>
       <AppointmentBanner
         selectedDate={selectedDate}
         setSelectedDate={setSelectedDate}
