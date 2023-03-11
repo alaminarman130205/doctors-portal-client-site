@@ -58,10 +58,6 @@ const Navbar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{menuItems}</ul>
       </div>
-      <h1>
-        new git branch added and i'm trying to be master of the new branch
-        system
-      </h1>
     </div>
   );
 };
