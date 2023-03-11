@@ -19,7 +19,7 @@ const Login = () => {
               <span className="label-text">Email</span>
             </label>
             <input
-              {...register("email")}
+              {...register("email", { required: true })}
               className="input input-bordered w-full max-w-xs"
               type="text"
             />
@@ -30,7 +30,7 @@ const Login = () => {
               <span className="label-text">Password</span>
             </label>
             <input
-              {...register("password")}
+              {...register("password", { required: true })}
               className="input input-bordered w-full max-w-xs"
               type="password"
             />
